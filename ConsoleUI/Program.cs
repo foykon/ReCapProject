@@ -13,9 +13,9 @@ namespace ConsoleUI
             //OldMain();
 
             CarManager carManager = new CarManager(new EFCarDal());
-            foreach (var car in carManager.GetAll())
+            foreach (var car in carManager.GetCarDetails())
             {
-                Console.WriteLine(car.DailyPrice);
+                Console.WriteLine(car.CarId + "/" + car.BrandName + "/" + car.ColorName + "/" + car.DailyPrice);
             }
 
         }
