@@ -11,6 +11,22 @@ namespace ConsoleUI
         static void Main(string[] args)
         {
             //OldMain();
+            //CarDetailDto();
+            RentalManager rentalManager = new RentalManager(new EFRentalDal());
+            var result = rentalManager.Add(new Rental
+            {
+                RentalId = 6,
+                CarId = 1,
+                CustomerId = 1,
+                ReturnDate = null,
+                RentDate = DateTime.Now
+
+            }); ; ;
+            Console.WriteLine(result.Message);
+
+        }
+        static void CarDetailDto()
+        {
 
             CarManager carManager = new CarManager(new EFCarDal());
             var result = carManager.GetCarDetails();
@@ -21,10 +37,8 @@ namespace ConsoleUI
                     Console.WriteLine(car.CarId + "/" + car.BrandName + "/" + car.ColorName + "/" + car.DailyPrice);
                 }
             }
-            
-
         }
-        
+
         static void OldMain()
         {
             //CarManager carManager = new CarManager(new InMemoryCarDal());
