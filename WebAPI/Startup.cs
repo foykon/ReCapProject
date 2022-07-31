@@ -30,19 +30,19 @@ namespace WebAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddSingleton<IBrandService, BrandManager>();
-            services.AddSingleton<ICarService, CarManager>();
-            services.AddSingleton<IColorService, ColorManager>();
-            services.AddSingleton<ICustomerService, CustomerManager>();
-            services.AddSingleton<IUserService, UserManager>();
-            services.AddSingleton<IRentalService, RentalManager>();
+            //services.AddSingleton<IBrandService, BrandManager>();
+            //services.AddSingleton<ICarService, CarManager>();
+            //services.AddSingleton<IColorService, ColorManager>();
+            //services.AddSingleton<ICustomerService, CustomerManager>();
+            //services.AddSingleton<IUserService, UserManager>();
+            //services.AddSingleton<IRentalService, RentalManager>();
 
-            services.AddSingleton<IBrandDal, EFBrandDal>();
-            services.AddSingleton<ICarDal, EFCarDal>();
-            services.AddSingleton<IColorDal, EFColorDal>();
-            services.AddSingleton<ICustomerDal, EFCustomerDal>();
-            services.AddSingleton<IUserDal, EFUserDal>();
-            services.AddSingleton<IRentalDal, EFRentalDal>();
+            //services.AddSingleton<IBrandDal, EFBrandDal>();
+            //services.AddSingleton<ICarDal, EFCarDal>();
+            //services.AddSingleton<IColorDal, EFColorDal>();
+            //services.AddSingleton<ICustomerDal, EFCustomerDal>();
+            //services.AddSingleton<IUserDal, EFUserDal>();
+            //services.AddSingleton<IRentalDal, EFRentalDal>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
